@@ -1,10 +1,13 @@
-#### Professional Web Service Portfolio Website Template
+# Professional Portfolio Website
+
+© 2026 LaravelDev2026. All rights reserved.
+
+**Notice:** This code is provided for portfolio demonstration purposes only.
+Unauthorized copying, modification, distribution, or commercial use is prohibited.
 
 #### Version: 1.0.0
 
 #### Date: Jan 19th 2026
-
-# Professional Service Website
 
 A modern, responsive website template for service-based businesses with a fully functional contact form.
 
