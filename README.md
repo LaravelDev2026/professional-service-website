@@ -53,19 +53,33 @@ A modern, responsive website template for service-based businesses with a fully 
 
 ## File Structure
 
-1. professional-service-website/
-2. ├── index.html # Main HTML file
-3. ├── style.css # All CSS styles
-4. ├── js/
-5. │ └── main.js # JavaScript functionality
-6. ├── php/
-7. │ ├── config.php # Configuration settings
-8. │ ├── contact-form.php # Form processing
-9. │ └── mailer.php # Email sending class
-10. ├── assets/
-11. │ ├── images/ # Website images
-12. │ └── icons/ # Favicon & icons
-13. └── README.md # This file
+```
+professional-service-website/
+├── index.html              # Home page
+├── services.html           # Services page  
+├── portfolio.html          # Portfolio page
+├── about.html              # About page
+├── contact.html            # Contact page
+├── privacy-policy.html     # Privacy policy
+├── terms-of-service.html   # Terms of service
+├── style.css               # All CSS styles
+├── LICENSE                 # License file
+├── README.md               # Documentation
+├── js/
+│   └── main.js             # JavaScript functionality
+├── php/
+│   ├── config.php          # Main configuration
+│   ├── config.example.php  # Configuration defaults
+│   ├── contact-form.php    # Form processing
+│   └── mailer.php          # Email sending class
+├── assets/                 # Assets directory
+│   ├── images/             # Website images
+│   └── icons/              # Favicon & icons
+├── vendor/                 # PHP dependencies (PHPMailer)
+├── composer.json           # Composer configuration
+└── composer.lock           # Composer lock file
+└── git.ignore              # GitHub ignore file for security
+```
 
 ## Customization
 
