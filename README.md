@@ -1,10 +1,5 @@
 # Professional Portfolio Website
 
-© 2026 LaravelDev2026. All rights reserved.
-
-**Notice:** This code is provided for portfolio demonstration purposes only.
-Unauthorized copying, modification, distribution, or commercial use is prohibited.
-
 #### Version: 1.0.0
 
 #### Date: Jan 19th 2026
@@ -116,7 +111,11 @@ Edit the CSS variables in `style.css`:
 
 ## License
 
-This project is available for personal and commercial use with attribution.
+ALL RIGHTS RESERVED. This code is provided for portfolio demonstration purposes only.
+
+**STRICTLY PROHIBITED:** Copying, modifying, distributing, or using this code for any purpose.
+
+© 2026 LaravelDev2026. All rights reserved.
 
 ## Support
 
