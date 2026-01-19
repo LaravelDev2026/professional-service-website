@@ -1,0 +1,44 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files
+.env
+config.php
+php/config.php
+
+# Database
+*.sql
+*.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Email attachments
+/tmp/
+/uploads/
+
+# Sensitive data
+*.pem
+*.key
+*.cert

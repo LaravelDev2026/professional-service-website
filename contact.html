@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact Us | Example Web Solutions</title>
+    <meta content="Get in touch with Example Web Solutions for professional web development services" name="description">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">
+            <i class="fas fa-code"></i>
+            <span>Example Web</span>
+        </a>
+        <button aria-label="Toggle menu" class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li><a class="btn btn-primary" href="contact.html">Get Quote</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Hero -->
+<section class="contact-hero section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="section-subtitle">Get in touch for a free consultation. We're here to help with your web development needs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-page section">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Office Address</h4>
+                        <p>123 Fake Street<br>Fake City, ZZ 00000<br>Some Country</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>+0 (000) 123-4567</p>
+                        <small>Mon-Fri, 9AM-6PM EST</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>info@example.com</p>
+                        <p>support@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form action="php/contact-form.php" id="contactForm" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input id="name" name="name" placeholder="Enter your full name" required type="text">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input id="email" name="email" placeholder="Enter your email address" required type="email">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" placeholder="Enter your phone number" type="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="seo">SEO Optimization</option>
+                            <option value="ecommerce">E-commerce Solutions</option>
+                            <option value="maintenance">Website Maintenance</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Project Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-1000">Under $1,000</option>
+                            <option value="1000-5000">$1,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-25000">$10,000 - $25,000</option>
+                            <option value="25000-plus">$25,000+</option>
+                            <option value="not-sure">Not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project goals, timeline, and any specific requirements..." required rows="6"></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input checked id="newsletter" name="newsletter" type="checkbox">
+                            <label for="newsletter">Subscribe to our newsletter for updates and tips</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+
+                    <div class="response-message" id="formResponse"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="container">
+        <h3 class="text-center">Find Our Office</h3>
+        <div class="map-container">
+            <h3>Google Map removed to respect peoples privacy. It would otherwise go here.</h3>
+
+            <!-- Change src hashtag only to use valid url from Google Maps, and remove <h3>Text mentioned</h3> line above
+            <iframe
+                    src="#"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Example Web Solutions Office Location">
+            </iframe>
+            -->
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about our services and process</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>How soon will you respond to my inquiry?</h3>
+                <p>We typically respond within 24 hours during business days. For urgent matters, please call our office directly.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer free consultations?</h3>
+                <p>Yes! We offer free 30-minute consultations to discuss your project requirements and provide initial recommendations.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What information should I include in my project details?</h3>
+                <p>Please include your business goals, target audience, desired features, timeline, and any existing websites or competitors you admire.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you work with international clients?</h3>
+                <p>Absolutely! We work with clients worldwide and can accommodate different time zones and communication preferences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <a class="logo" href="index.html">
+                    <i class="fas fa-code"></i>
+                    <span>Example Web</span>
+                </a>
+                <p>Professional web solutions that drive business growth and digital transformation.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fake Street, ZZ 00000</li>
+                    <li><i class="fas fa-phone"></i> +0 (000) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@example.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Example Web Solutions. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
