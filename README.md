@@ -22,7 +22,7 @@ A modern, responsive website template for service-based businesses with a fully 
 - HTML5
 - CSS3 (Flexbox/Grid)
 - JavaScript (ES6+)
-- PHP 7.4+
+- PHP 8.2+
 - PHPMailer for email
 
 ## Installation
