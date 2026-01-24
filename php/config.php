@@ -1,3 +1,5 @@
+<!-- This file is needed in contact-form.php -->
+
 <?php
     /**
      * Configuration File
@@ -11,16 +13,16 @@
     
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
-    
+
 // Email Configuration
-    const SITE_EMAIL = 'your-email@example.com'; // Change to your Gmail email or similar
+    const SITE_EMAIL = 'phpdev2026@outlook.com'; // Change to your email
     const SITE_NAME = 'Example Web Solutions'; // Change to your company name
-    const ADMIN_EMAIL = 'admin@example.com'; // Change to your Gmail email or similar
+    const ADMIN_EMAIL = 'phpdev2026@outlook.com'; // Change to your email
 
 // SMTP Configuration (for PHPMailer)
-    const SMTP_HOST = 'smtp.gmail.com'; // Change to your SMTP server or similar
-    const SMTP_USER = 'your-email@gmail.com'; // Change to your Gmail email or similar
-    const SMTP_PASS = 'your-app-password'; // Use app password for Gmail or similar
+    const SMTP_HOST = 'smtp.gmail.com'; // Change to your SMTP server
+    const SMTP_USER = 'your-email@example.com'; // Change to your email
+    const SMTP_PASS = 'your-app-password';// Use app password for email account
     const SMTP_PORT = 587; // Setup for Gmail
     const SMTP_SECURE = 'tls'; // Setup for Gmail
 

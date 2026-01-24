@@ -30,16 +30,14 @@ A modern, responsive website template for service-based businesses with a fully 
 ### Quick Start
 
 1. **Clone or download** the project files
-2. **Upload** to your web server
-3. **Configure** the settings in `php/config.php`
-4. **Test** the contact form
+2. **Configure** the settings in `php/config.php`
+3. **Test** the contact form
 
 ### Configuration
 
 1. Open `php/config.php` and update:
     - Email settings
     - SMTP credentials
-    - Site information
 
 2. For PHPMailer:
     - Install via composer: `composer require phpmailer/phpmailer`
@@ -48,7 +46,7 @@ A modern, responsive website template for service-based businesses with a fully 
 ### Testing
 
 1. Open `index.html` in your browser
-2. Test the contact form submission
+2. Browse the site then test the contact form submission
 3. Check email delivery
 
 ## File Structure
@@ -69,7 +67,6 @@ professional-service-website/
 │   └── main.js             # JavaScript functionality
 ├── php/
 │   ├── config.php          # Main configuration
-│   ├── config.example.php  # Configuration defaults
 │   ├── contact-form.php    # Form processing
 │   └── mailer.php          # Email sending class
 ├── assets/                 # Assets directory
@@ -86,34 +83,12 @@ professional-service-website/
 ### Colors
 
 Edit the CSS variables in `style.css`:
-:root {
---primary-color: #2563eb;
---secondary-color: #7c3aed;
-/* ... other variables */
-}
 
 ## Customization
 
-### Content
-
-- Update text in `index.html`
-- Replace images in `assets/images/`
-- Modify services in the services section
-
-### Features
-
-- Add more sections (Portfolio, Team, Testimonials)
-- Implement database for contact form submissions
-- Add blog functionality
-- Integrate payment gateway
-
 ## Security Notes
 
-1. **Always** configure SMTP with app passwords
-2. **Enable** HTTPS on production
-3. **Regularly** update dependencies
-4. **Implement** CAPTCHA for production use
-5. **Sanitize** all user inputs
+**Always** configure SMTP with app passwords - APP PASSWORD, NOT EMAIL LOGIN PASSWORD!
 
 ## Browser Support
 
@@ -129,7 +104,7 @@ ALL RIGHTS RESERVED. This code is provided for portfolio demonstration purposes 
 
 **STRICTLY PROHIBITED:** Copying, modifying, distributing, or using this code for any purpose.
 
-© 2026 LaravelDev2026. All rights reserved.
+© 2026 PHPDev2026. All rights reserved.
 
 ## Support
 
@@ -137,11 +112,13 @@ For issues or questions:
 
 1. Check the configuration settings
 2. Enable error reporting in `config.php`
-3. Check server PHP version (requires 7+)
+3. Check server PHP version (requires 8.2+)
 4. Verify SMTP settings are correct
 
 ## Developer Contact
 
-#### Email: laraveldev2026@gmail.com
+#### Email: phpdev2026@outlook.com
 
-#### GitHub: github.com/LaravelDev2026
+#### GitHub: github.com/phpdev2026
+
+#### Dev Note: This project is shared to showcase my work and to give a live demo. It is NOT to be used as your own/distributed/edited etc.

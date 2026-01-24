@@ -4,8 +4,7 @@
 
 # Environment files
 .env
-config.php
-php/config.php
+#php/config.php
 
 # Database
 *.sql
